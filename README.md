@@ -7,17 +7,20 @@ administración de estudios de formación personalizados.
 El proyecto se creo utilizando la  Versión 1.1.8 June 26, 2011 del framework de Yii
 
 El Yii es un framework que:
-* Esta construido siguiendo el patrón del MVC Model, Vista y Controler
-* Separa en directorios distintos la estructura del framework  y la estructura del proyecto, guardados en
+Esta construido siguiendo el patrón del MVC Model, Vista y Controler
+
+Separa en directorios distintos la estructura del framework  y la estructura del proyecto, guardados en
 el directorio yii y en el directorio protected respectivamente. La organización de los directorios 
 del proyecto es configurable, en este caso tenemos que se desarrolló siguiendo la estructura por defecto 
-que sugiere Yii. En esté portafolio los directorios que están incluidos se utilizarón para los siguientes criterios :
-** _components_ contiene componentes que expanden el Yii o clases de soporte
-** _controllers_ contiene las clases que realizan las funciones de control
-** _extensions_ contiene extensiones de terceros, en el portafolio está un ejemplo de extensión 
+que sugiere Yii. 
+
+En esté portafolio los directorios que están incluidos se utilizarón para los siguientes criterios :
+* _components_ contiene componentes que expanden el Yii o clases de soporte
+* _controllers_ contiene las clases que realizan las funciones de control
+* _extensions_ contiene extensiones de terceros, en el portafolio está un ejemplo de extensión 
 creada ex-proceso para el proyecto
-** _models_  contiene los modelos del proyecto.
-** _test_ contiene las pruebas unitarias del sistema
+* _models_  contiene los modelos del proyecto.
+* _test_ contiene las pruebas unitarias del sistema
 
 En el portafolio encontramos el código implicado en la definición y uso de "behaviors" para los modelos, 
 el código responsable de la relacion entre modelos del tipo padre e hijo y un ejemplo de pruebas unitarias.
@@ -36,7 +39,7 @@ se le añade dicho comportamiento.
 
 Así que cuando se produzcan los eventos de guardar o validar de Usuario se ejecutara beforeValidate 
 y/o el beforeSave, además el modelo _Usuario_ con el _EventBehavior_ incorpora dos métodos mas 
-(_activo_ y _esCreador_) que puede llamar como si una función propia suya '$usuarioX->activo()'
+(_activo_ y _esCreador_) que puede llamar como si una función propia suya `$usuarioX->activo()`
 
 ## Definir relaciones entre modelos del tipo padre e hijo
 El CArctiveRecord es la clase base para el tratamiento de los Modelos, entoces se ha creado un clase descendiente para
