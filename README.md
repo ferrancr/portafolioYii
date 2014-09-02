@@ -33,8 +33,8 @@ En este caso se creo un "comportamiento" que va a ser utilizado por todos aquell
 se deseaba que quedase registro del nombre del usuario que creó el dato y en que fecha se realizó.
 
 * En protected/extensions/proyecto/EventBehavior.php class __EventBehavior__ vemos la definición del "behavior", 
-para actualizar y validar los atributos de usuario y fecha de creación y dos metodos extras __activo__ y __esCreador__
-* En protected/models/Usuario.php funcion __behaviors__  se indica que al modelo de usuario 
+para actualizar y validar los atributos de usuario y fecha de creación y dos métodos extras __activo__ y __esCreador__
+* En protected/models/Usuario.php función __behaviors__  se indica que al modelo de usuario 
 se le añade dicho comportamiento.
 
 Así que cuando se produzcan los eventos de guardar o validar de Usuario se ejecutara beforeValidate 
@@ -42,7 +42,7 @@ y/o el beforeSave, además el modelo __Usuario__ con el __EventBehavior__ incorp
 (__activo__ y __esCreador__) que puede llamar como si una función propia suya `$usuarioX->activo()`
 
 ## Definir relaciones entre modelos del tipo padre e hijo
-El __CArctiveRecord__ es la clase base para el tratamiento de los Modelos, entoces se ha creado un clase descendiente para
+El __CArctiveRecord__ es la clase base para el tratamiento de los Modelos, entonces se ha creado un clase descendiente para
 tratar los casos de relación entre modelos del tipo de padre e hijo, en donde el hijo solo existe si existe el padre.
 * En protected/componets/PHActiveRecord.php se han definido los métodos que sobrescriben el procedimiento normal
 al momento de validar y guardar los datos para que  tengan en cuenta que no se pueda guardar un hijo 
@@ -53,7 +53,7 @@ respectivamente.
 
 ## UnitTest
 En protected/tests/unit/fechasTest.php se realizan 3 pruebas sobre el tratamiento de fechas.
-* En la primera __testPrevio__ se utilizá para mostrar las características de la función de soporte de Yii __CDateTimeParser::parse__
+* En la primera __testPrevio__ se utiliza para mostrar las características de la función de soporte de Yii __CDateTimeParser::parse__
 * En el segundo __testPaso1__ se prueba el funcionamiento de la función de ayuda de UtilGIeaem::desglosarPorPeriodos
 que está en protected/components/UtilGIeaem.php
 * En el tercer paso_ testValidator_ se prueba que el modelo __Usuficha__ valide correctamente el contenido del
