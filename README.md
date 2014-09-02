@@ -14,7 +14,7 @@ el directorio yii y en el directorio protected respectivamente. La organización
 del proyecto es configurable, en este caso tenemos que se desarrolló siguiendo la estructura por defecto 
 que sugiere Yii. 
 
-En esté portafolio los directorios que están incluidos se utilizarón para los siguientes criterios :
+En esté portafolio los directorios que están incluidos se utilizaron para los siguientes criterios :
 * __components__ contiene componentes que expanden el Yii o clases de soporte
 * __controllers__ contiene las clases que realizan las funciones de control
 * __extensions__ contiene extensiones de terceros, en el portafolio está un ejemplo de extensión 
@@ -23,7 +23,7 @@ creada ex-proceso para el proyecto
 * __test__ contiene las pruebas unitarias del sistema
 
 En el portafolio encontramos el código implicado en la definición y uso de "behaviors" para los modelos, 
-el código responsable de la relacion entre modelos del tipo padre e hijo y un ejemplo de pruebas unitarias.
+el código responsable de la relación entre modelos del tipo padre e hijo y un ejemplo de pruebas unitarias.
  
 ##Behaviors
 Yii incorpora la infraestructura para poder definir atributos y métodos para un modelo mediante el añadido 
